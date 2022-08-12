@@ -30,7 +30,7 @@ The model is bult with Convolutional Neural Networks(CNN) in 4 layers. model_str
         Windows(cmd prompt): set FLASK_APP=FER-Capstone
         Linux/Mac: export FLASK_APP=FER-Capstone
 
-8. Launch the Flask application by running: Flask run
+8. Launch the Flask application by running: flask run
 9. A URL will be generated within the terminal window, copy/paste into your browser or "ctrl+click" to open.  
 
 # How to use the program 
