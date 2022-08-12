@@ -12,7 +12,7 @@ main = Blueprint('main', __name__)
 face_detector = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Load the Path
-path = Path.cwd() / "FaceExpressionDetectionFlask" / "ml_folder"
+path = Path.cwd() / "FER-Capstone" / "ml_folder"
 
 # Load the Model and Weights
 model = model_from_json(open(path / "model_structure.json", "r").read())
