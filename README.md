@@ -28,7 +28,7 @@ The model is bult with Convolutional Neural Networks(CNN) in 4 layers. model_str
 7. Set the Flask Env Variable(This has to be repeated every time the conda environment is started):
 
         Windows(cmd prompt): set FLASK_APP=FER-Capstone
-        Linux/Mac: EXPORT FLASK_APP=FER-Capstone
+        Linux/Mac: export FLASK_APP=FER-Capstone
 
 8. Launch the Flask application by running: Flask run
 9. A URL will be generated within the terminal window, copy/paste into your browser or "ctrl+click" to open.  
