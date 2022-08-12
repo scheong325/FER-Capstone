@@ -16,7 +16,7 @@ The model is bult with Convolutional Neural Networks(CNN) in 4 layers. model_str
 # Steps to install the program 
 1. Clone/Download the Repo @ https://github.com/scheong325/FER-Capstone.git
 2. Install miniconda for your OS: https://docs.conda.io/en/main/miniconda.html
-3. After installing minicoda, launch and ensure you are in the 'base' conda environment.
+3. After installing minicoda, launch and ensure you are in the 'base' conda environment, specified with 'base' in the terminal window.
 4. Navigate to the FER-Capstone folder
 5. Install required packages:
         
@@ -25,7 +25,7 @@ The model is bult with Convolutional Neural Networks(CNN) in 4 layers. model_str
         pip install -r requirements.txt
 
 6. Navigate one folder out of FER-Capstone (ex: If your clone is in /home/FER-Capstone, navigate to /home/)
-7. Set the Flask Env Variable(This has to be done every time the conda environment is started):
+7. Set the Flask Env Variable(This has to be repeated every time the conda environment is started):
 
         Windows(cmd prompt): set FLASK_APP=FER-Capstone
         Linux/Mac: EXPORT FLASK_APP=FER-Capstone
