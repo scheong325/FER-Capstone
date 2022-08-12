@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facial Expression Detection</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='animation.css')}}">
+
+</head>
+
+<body>
+  <h1>Facial Expression Detection</h1>
+    <h2 id="h2-2" class="jello-horizontal">
+      Sample Expressions
+      <img src="../static/datasample.png" alt="datasample">  
+    </h2>
+  <br>
+  <div>
+    <div id="container1">
+      <div class="start-stop">
+        <a href="#" id=5 onclick="startCamera()">Start Camera</a>
+        <a href="#" id=6 onclick="stopCamera()">Stop Camera</a>
+        <a href="#" id=7 onclick="adjustCanvas(true)">Adjust/Clear Canvas</a>
+      </div>
+      <br>
+      <div id="canvas-parent">
+        <canvas id="drawCanvas"></canvas>
+        <video contrls id="videoElement" onloadeddata="adjustCanvas()"></video>
+        <canvas id="captureCanvas"></canvas>
+      </div>
+      
+    </div>
+    <div id="container2">
+      <h4>Analysis :</h4>
+      <div id="analytics">
+        <p>Angry: <span id="angry"></span></p>
+        <p>Disgust: <span id="disgust"></span></p>
+        <p>Fear: <span id="fear"></span></p>
+        <p>Happy: <span id="happy"></span></p>
+        <p>Sad: <span id="sad"></span></p>
+        <p>Surprise: <span id="surprise"></span></p>
+        <p>Neutral: <span id="neutral"></span></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="graph-parent">
+    <h3>Graph :</h3>
+    <div id="graph">
+
+    </div>
+
+  </div>
+
+
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+  <script src="{{ url_for('static', filename='graph.js') }}"></script>
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,170 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+}
+
+body > div {
+  margin: auto;
+  width: 55%;
+  overflow: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  width: 700px;
+  border: 4px solid black;
+  border-radius: 10px;
+  background-color: #ffab81;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+}
+
+h2 > a {
+  text-decoration: none;
+  border: 1px solid red;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+h2 > a:hover {
+  border: 1px ridge red;
+  background-color: white;
+}
+
+#container1 {
+  margin: 0px auto;
+  width: 680px;
+  padding: 15px;
+  border: 4px #333 solid;
+  border-radius: 10px;
+  /* float: left; */
+  /* position: absolute; */
+}
+.start-stop {
+  margin-top: 2px;
+  /* margin: 0; */
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.start-stop > a {
+  background-color: #006eff;
+  border: 2px ridge black;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.start-stop :last-child {
+  right: 40px;
+}
+
+#canvas-parent {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+#canvas-parent > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+#captureCanvas {
+  z-index: 1;
+}
+
+#videoElement {
+  background-color: #666;
+  width: 640px;
+  height: 480px;
+  z-index: 2;
+}
+
+#drawCanvas {
+  z-index: 3;
+}
+
+#container2 {
+  width: 200px;
+  border: 4px solid black;
+  border-radius: 10px;
+  /* text-align: center; */
+  padding: 5px;
+  margin: auto;
+}
+
+#container2 > h4 {
+  padding-left: 15px;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+#container2 > #analytics > p {
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#container2 > #analytics > p:last-child {
+  margin-bottom: 10px;
+}
+
+#graph-parent {
+  border: 4px solid #333;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#container3 {
+  position: absolute;
+  top: 700px;
+  width: 795px;
+  height: 125px;
+  border: 4px solid #333;
+  border-radius: 10px;
+  float: right;
+}
+
+#container3 > h4 {
+  padding-left: 15px;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+#container3 > #analytics > p {
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#container3 > #analytics > p:last-child {
+  margin-bottom: 10px;
+}
+
+#graph-parent > h3 {
+  padding-left: 15px;
+  text-decoration: underline;
+}
+
+#graph {
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+#graph > svg {
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
